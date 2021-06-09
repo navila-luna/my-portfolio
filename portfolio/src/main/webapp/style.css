@@ -1,8 +1,10 @@
-#content {
+#content  {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
-  text-align: center;
+}
+#content h1, h2 {
+    text-align: center;
 }
 
 #greeting-container {
@@ -43,11 +45,22 @@ div.content {
   height: 1000px;
 }
 .circle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;  
   height: auto; 
   border-radius: 50%; 
 }
-img {
+#pets{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+}
+
+#pets img {
+  object-fit: cover;
   width: 200px;  
-  height: 254; 
+  height: 254px;
 }
