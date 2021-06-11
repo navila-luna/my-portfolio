@@ -15,14 +15,13 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomSong() {
+  const songs = ['Papaoutai by Stromae', 'Good 4 u by Olivia Rodrigo', '3005 by Childish Gambino', 'Used to this by Camila Cabello', 'Rayando el sol by Mana', 'Besos en Guerra by Morat and Juanes', 'ANY Shawn Mendes song', 'Symphony by Clean Bandit', 'Blinding Lights by The Weeknd', ' Hawái by Maluma', 'I gotta feeling by Black Eyed Peas'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random song.
+  const song = songs[Math.floor(Math.random() * songs.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const songContainer = document.getElementById('song-container');
+  songContainer.innerText = song;
 }
