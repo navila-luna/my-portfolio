@@ -9,11 +9,17 @@
   <body>
   <div class ="sidebar">
     <a class="active" href="#About Me">Home</a>
-    <a href="#contact">Contact Info</a>
-    <a href="#resume">Resume</a>
-  </div>
+    <a class="resume" href="https://docs.google.com/document/d/1OMKg2K1GW6W3wr_lU_Z7RtVczClg4CL6yqtsI2lSlrw/edit?usp=sharing">Resume</a>
+    <p> Phone Number: 919-923-7482 <br>
+        Email: navila@uchicago.edu 
+    </p>
+    <div class="logos">
+        <a href="https://www.linkedin.com/in/nicole-avila-b3a9a31b1/"><img src="images/linkedIn.png" class="contacts"></a>
+        <a href="https://github.com/navila-luna"><img src="images/nicolesGithub.png" class="contacts"></a>
+    </div>
+    </div>
     <div id="content"> 
-      <h1> Nicole Avila's</h1>
+      <div id="name"> <h1> Nicole Avila</h1></div>
       <img src="images/Nicole.jpeg" class="circle">
       <h2>About Me</h2>
       <p> Hello there! My name is Nicole Avila and I'm a rising 3rd year at the University of Chicago.
@@ -45,9 +51,9 @@
         <img src="images/Max.jpeg">   
     </div>
     <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-    <p>Click here to get a random message:</p>
-    <button onclick="addRandomGreeting()">Hello</button>
-    <div id="greeting-container"></div>
+    <h3>Click Here To Get A Randomized Song Recommendation From Me!</h3>
+    <button onclick="addRandomSong()">Click Here!</button>
+    <div id="song-container"></div>
     </div>
   </body>
 </html>

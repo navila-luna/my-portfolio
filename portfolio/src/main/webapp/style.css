@@ -1,10 +1,14 @@
 #content  {
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 750px;
 }
-#content h1, h2 {
+#content h2 {
     text-align: center;
+}
+#content h1 {
+    top: 5px;
+    left: 5px;
 }
 
 #greeting-container {
@@ -13,10 +17,12 @@
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 18%;
   background-color: #f1f1f1;
+  top: 15px;
+  right: 40px;
   position: fixed;
-  height: 50%;
+  height: 35%;
   overflow: auto;
 }
 /* Sidebar links */
@@ -40,11 +46,12 @@
 }
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 200px;
+  margin-right: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
-.circle{
+
+.circle {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -52,7 +59,7 @@ div.content {
   height: auto; 
   border-radius: 50%; 
 }
-#pets{
+#pets {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,4 +70,15 @@ div.content {
   object-fit: cover;
   width: 200px;  
   height: 254px;
+}
+#logos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+.contacts {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
 }
