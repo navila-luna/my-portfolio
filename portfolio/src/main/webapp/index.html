@@ -7,6 +7,7 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="newscript.js"></script>
   </head>
   <body>
   <div class ="sidebar">
@@ -58,16 +59,32 @@
     </p>
     
     <div id="pets"> 
-        <img src="images/Blackbeak.jpg">
-        <img src="images/Max.jpeg"> 
+      <img src="images/Blackbeak.jpg">
+      <img src="images/Max.jpeg"> 
     </div>
     
     <h3>Click Here To Get A Randomized Song Recommendation From Me!</h3>
     
-    <button onclick="addRandomSong()">Click Here!</button>
+    <!-- <div id="button">Click Here!</div> -->
     
-    <div id="song-container"></div>
-    
+    <!-- <div id="song-container"></div> -->
+
   </div>
+
+   <div id="date-container"></div>
+   
+  <button onclick="showServerTime();">
+    Get date
+  </button>
+  <p>Click <a href="/date">here</a> to see the server response directly.</p>
+  
+
+  <!-- <form method="POST">
+    <p>Enter some text here:</p>
+    <textarea name="text-input">hello world</textarea>
+    <br/>
+    <input type="submit" />
+  </form> -->
+  
 </body>
 </html>
