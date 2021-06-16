@@ -10,6 +10,7 @@
     <script src="newscript.js"></script>
   </head>
   <body>
+
   <div class ="sidebar">
     <a class="active" href="#About Me">Home</a>
     <a class="resume" href="https://docs.google.com/document/d/1OMKg2K1GW6W3wr_lU_Z7RtVczClg4CL6yqtsI2lSlrw/edit?usp=sharing">Resume</a>
@@ -64,27 +65,24 @@
     </div>
     
     <h3>Click Here To Get A Randomized Song Recommendation From Me!</h3>
-    
-    <!-- <div id="button">Click Here!</div> -->
-    
-    <!-- <div id="song-container"></div> -->
+    <button onclick="addRandomSong()">Click Here!</button>
+    <div id="song-container"></div>
 
   </div>
 
    <div id="date-container"></div>
-   
+
   <button onclick="showServerTime();">
     Get date
   </button>
   <p>Click <a href="/date">here</a> to see the server response directly.</p>
-  
 
-  <!-- <form method="POST">
+  <form method="POST">
     <p>Enter some text here:</p>
     <textarea name="text-input">hello world</textarea>
     <br/>
     <input type="submit" />
-  </form> -->
-  
+  </form>
+
 </body>
 </html>
