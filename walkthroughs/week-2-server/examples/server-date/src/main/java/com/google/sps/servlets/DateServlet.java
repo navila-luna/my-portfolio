@@ -27,9 +27,8 @@ public class DateServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    System.out.println("Hello");
     response.setContentType("text/html;");
     response.getWriter().println("The server's current date is " + new Date());
-    System.out.println("Hello 2");
   }
 }
+
