@@ -11,6 +11,6 @@ async function moreFacts(){
   const facts = await responseFromServer.json();
   const factsContainer = document.getElementById('facts-container');
   factsContainer.innerHTML = '';
-  const facts = facts[Math.floor(Math.random() * facts.length)];
-  factsContainer.innerText = textFromResponse;
+  const randomFact = facts[Math.floor(Math.random() * facts.length)];
+  factsContainer.innerText = randomFact;
 }

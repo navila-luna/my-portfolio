@@ -13,7 +13,7 @@
 // limitations under the License.
 
 package com.google.sps.servlets;
-
+import com.google.gson.Gson;
 import java.io.IOException;
 import java.util.Date;
 import javax.servlet.annotation.WebServlet;
@@ -25,35 +25,15 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/more-about-me")
 public class MoreAboutMe extends HttpServlet {
   
-  final String [] funFacts = new String [] {"I love Ultimate Frisbee", "My favorite TV show is Nancy Drew", "I'm interested in Software Engineering"};
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    final String [] funFacts = new String [] {"I love Ultimate Frisbee", "My favorite TV show is Nancy Drew", "I'm interested in Software Engineering"};
     String json = convertToJsonUsingGson(funFacts);
     response.setContentType("application/json;");
     response.getWriter().println(json);
   }
-  /**
-   * Converts a ServerStats instance into a JSON string using manual String concatentation.
-   */
 
-  // private String convertToJson() {
-  //   String json = "{";
-  //   json += "\"Game\": ";
-  //   json += "\"Ultimate Frisbee\"";
-  //   json += ", ";
-  //   json += "\"Sport\": ";
-  //   json += "\"Cross Country\"";
-  //   json += ", ";
-  //   json += "\"TvShow \": ";
-  //   json += "\"Nancy Drew\"";
-  //   json += ", ";
-  //   json += "\"Career\":";
-  //   json += "\"Software Engineering, Product Management\"";
-  //   json += "}";
-  //   return json;
-  // }
-
-  /**
+  /*
    *  Converts a ServerStats instance into a JSON string using the Gson library. Note: We first added
    * the Gson library dependency to pom.xml.
   */

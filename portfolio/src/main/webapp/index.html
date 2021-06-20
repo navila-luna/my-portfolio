@@ -70,22 +70,20 @@
 
     <h3>Click Here For More Random Facts About Me!</h3>
     <button onclick="moreFacts()"> More Fun facts</button>
-    <p id="facts-container"></p>
+    <p id="facts-container"></p>  
+      
+      <form action="/form-handler" method="POST">
+        
+        <p> <b>Write Any Feedback Down Below:</b></p>
+        <textarea name="text-input">type here</textarea>
+        <br/>
+        <input type="submit" />
+
+      </form><p>Click <a href="/date">here</a> to see the server response directly.</p>
+    <div id="date-container"></div>
+    <button onclick="showServerTime();">
+      Get date
+    </button>
   </div>
-
-  <div id="date-container"></div>
-  <button onclick="showServerTime();">
-    Get date
-  </button>
-
-  <p>Click <a href="/date">here</a> to see the server response directly.</p>
-
-  <form method="POST">
-    <p>Enter some text here:</p>
-    <textarea name="text-input">hello world</textarea>
-    <br/>
-    <input type="submit" />
-  </form>
-
 </body>
 </html>
