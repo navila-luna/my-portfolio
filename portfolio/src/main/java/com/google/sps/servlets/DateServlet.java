@@ -31,4 +31,3 @@ public class DateServlet extends HttpServlet {
     response.getWriter().println("The server's current date is " + new Date());
   }
 }
-
