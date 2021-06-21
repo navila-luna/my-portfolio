@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/** Servlet that responds with the current date. */
+/** Servlet that gives fun facts about Nicole. */
 @WebServlet("/more-about-me")
 public class MoreAboutMe extends HttpServlet {
   
@@ -32,14 +32,11 @@ public class MoreAboutMe extends HttpServlet {
     response.setContentType("application/json;");
     response.getWriter().println(json);
   }
-
   /*
-   *  Converts a ServerStats instance into a JSON string using the Gson library. Note: We first added
-   * the Gson library dependency to pom.xml.
+   *  Converts a ServerStats instance into a JSON string using the Gson library.
   */
   private String convertToJsonUsingGson(String [] funFacts) {
     Gson gson = new Gson();
-    String json = gson.toJson(funFacts);
-    return json;
+    return gson.toJson(funFacts);
   }
 }

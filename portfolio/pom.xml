@@ -6,7 +6,6 @@
   <groupId>com.google.sps</groupId>
   <artifactId>portfolio</artifactId>
   <version>1</version>
-  
   <properties>
     <!-- Java 11 -->
     <maven.compiler.source>11</maven.compiler.source>
