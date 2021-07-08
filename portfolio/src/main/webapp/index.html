@@ -72,6 +72,13 @@
     <button onclick="moreFacts()"> More Fun facts</button>
     <p id="facts-container"></p>  
      
+    <h3>Try The Sentiment Analysis Test!</h3>
+    <p> write up a message and submit it to analyze it's sentiment!</p>
+    <form method="POST" action="/sentiment">
+      <textarea name="message"></textarea>
+
+      <button>Submit</button>
+    </form>
     <div id="form-handler-container">
       <form action="/form-handler" method="POST">
           
